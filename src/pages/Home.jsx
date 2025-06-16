@@ -186,7 +186,7 @@ const Home = () => {
           >
             <span>📄</span> Download Resume
           </a>
-          <a href="https://drive.google.com/file/d/1e3xzTho_cSBYS9_FUwuzDfshDjiPaM5z/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1QjfwouLUmTUOaOWHodkqdYXoyA0TNv9z/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           <button className="px-8 py-4 border border-cyan-500 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-500/10 transition-all duration-300">
