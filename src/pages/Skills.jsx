@@ -229,6 +229,18 @@ const Skills = () => {
           </div>
         </div>
       </section>
+      {/* Footer Section */}
+<footer className="bg-slate-950 text-gray-400 py-8 px-6 border-t border-slate-800 mt-20">
+  <div className="max-w-6xl mx-auto text-center">
+    <p className="text-sm">
+      &copy; {new Date().getFullYear()} Anamika Regmi &mdash; Frontend Developer & React Enthusiast
+    </p>
+    <p className="text-xs text-slate-500 mt-2">
+      Designed & developed with care and curiosity.
+    </p>
+  </div>
+</footer>
+
     </div>
   );
 };

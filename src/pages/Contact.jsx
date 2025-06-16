@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -26,35 +29,36 @@ const Contact = () => {
     setIsSubmitting(false);
   };
 
-  const contactMethods = [
-    {
-      icon: '📧',
-      title: 'Email',
-      value: 'anamikaregmi1@gmail.com',
-      description: 'Drop me a line anytime',
-      href: 'mailto:anamikaregmi1@gmail.com'
-    },
-    {
-      icon: '💼',
-      title: 'LinkedIn',
-      value: 'Connect with me',
-      description: 'Professional networking',
-      href: 'https://www.linkedin.com/in/anamika-regmi-962611244?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
-    },
-    {
-      icon: '💻',
-      title: 'GitHub',
-      value: 'Check my work',
-      description: 'Open source projects',
-      href: 'https://github.com/codewithanamika'
-    },
-    {
-      icon: '🐦',
-      title: 'Twitter',
-      value: 'Follow me',
-      description: 'Latest updates',
-      href: 'https://x.com/AnamikaRegmi?t=grBt -TX5vK7ZUxPOBIFQ&s=09'
-    }
+  
+const contactMethods = [
+  {
+    icon: <FaEnvelope className="text-2xl text-cyan-400" />,
+    title: 'Email',
+    value: 'anamikaregmi1@gmail.com',
+    description: 'Drop me a line anytime',
+    href: 'mailto:anamikaregmi1@gmail.com',
+  },
+  {
+    icon: <FaLinkedin className="text-2xl text-blue-400" />,
+    title: 'LinkedIn',
+    value: 'Connect with me',
+    description: 'Professional networking',
+    href: 'https://www.linkedin.com/in/anamika-regmi-962611244',
+  },
+  {
+    icon: <FaGithub className="text-2xl text-gray-300" />,
+    title: 'GitHub',
+    value: 'Check my work',
+    description: 'Open source projects',
+    href: 'https://github.com/codewithanamika',
+  },
+  {
+    icon: <FaTwitter className="text-2xl text-cyan-300" />,
+    title: 'Twitter',
+    value: 'Follow me',
+    description: 'Latest updates',
+    href: 'https://x.com/AnamikaRegmi',
+  },
   ];
 
   const stats = [
@@ -265,6 +269,18 @@ const Contact = () => {
           )}
         </div>
       </section>
+      {/* Footer Section */}
+<footer className="bg-slate-950 text-gray-400 py-8 px-6 border-t border-slate-800 mt-20">
+  <div className="max-w-6xl mx-auto text-center">
+    <p className="text-sm">
+      &copy; {new Date().getFullYear()} Anamika Regmi &mdash; Frontend Developer & React Enthusiast
+    </p>
+    <p className="text-xs text-slate-500 mt-2">
+      Designed & developed with care and curiosity.
+    </p>
+  </div>
+</footer>
+
     </div>
   );
 };

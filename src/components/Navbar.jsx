@@ -16,7 +16,6 @@ const Navbar = ({ currentPath = '/' }) => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/skills", label: "Skills" },
-    { to: "/resume", label: "Resume" },
     { to: "/contact", label: "Contact" }
 
   ];

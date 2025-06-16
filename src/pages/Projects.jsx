@@ -70,6 +70,17 @@ const Projects = () => {
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-24 h-24 bg-cyan-500/10 rounded-full animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-500/10 rounded-full animate-bounce"></div>
+    {/* Footer Section */}
+<footer className="bg-slate-950 text-gray-400 py-8 px-6 border-t border-slate-800 mt-20">
+  <div className="max-w-6xl mx-auto text-center">
+    <p className="text-sm">
+      &copy; {new Date().getFullYear()} Anamika Regmi &mdash; Frontend Developer & React Enthusiast
+    </p>
+    <p className="text-xs text-slate-500 mt-2">
+      Designed & developed with care and curiosity.
+    </p>
+  </div>
+</footer>
     </div>
   );
 };
