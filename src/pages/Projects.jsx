@@ -27,9 +27,9 @@ const projects = [
     link: "https://github.com/codewithanamika/theme-switcher"
   },
   {
-    title: "Fake Store",
-    description: "A responsive product listing interface using FakeStoreAPI.",
-    link: "https://github.com/codewithanamika/fakestore"
+    title: "E-com",
+    description: "An ecommerce site featuring user login, cart, and admin order management, hosted securely on render.",
+    link: "https://e-com-2d0a.onrender.com"
   },
 ];
 
