@@ -1,4 +1,6 @@
+
 import { Link } from "react-router-dom";
+import { Mail, ArrowUpRight } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -34,8 +36,12 @@ const Navbar = () => {
               title="Send an email to anamikaregmi1@gmail.com"
               className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-blue-600"
             >
-              <span aria-hidden="true">✉</span>
-              <span className="hidden lg:inline">anamikaregmi1@gmail.com</span>
+              <Mail size={18} strokeWidth={1.8} aria-hidden="true" />
+
+              <span className="hidden lg:inline">
+                anamikaregmi1@gmail.com
+              </span>
+
               <span className="lg:hidden">Email</span>
             </a>
 
@@ -43,7 +49,8 @@ const Navbar = () => {
               to="/cv"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-3 py-2.5 text-sm font-semibold !text-white transition-colors hover:bg-blue-600 sm:px-5"
             >
-              View CV <span aria-hidden="true">↗</span>
+              View CV
+              <ArrowUpRight size={16} strokeWidth={2} aria-hidden="true" />
             </Link>
           </div>
         </nav>
