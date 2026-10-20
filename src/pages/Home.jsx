@@ -120,12 +120,12 @@ const Home = () => {
             </p>
 
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">
-              Hello, I'm Anamika Regmi
+              Hello, I'm
             </p>
 
             <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-6xl md:text-7xl">
-              Turning ideas into{" "}
-              <span className="text-blue-600">web experiences.</span>
+              Anamika Regmi - {" "}
+              <span className="text-blue-600">Frontend Developer</span>
             </h1>
 
             <p className="mt-7 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
